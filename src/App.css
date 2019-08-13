@@ -1,33 +1,78 @@
-.App {
+body {
+  background: burlywood;
   text-align: center;
+  margin: 10px;
+}
+.form {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 5px 10px 5px gray;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 3px 5px 3px gray;
+  width: 500px;
+  height: 40px;
+}
+button {
+  border-radius: 15px;
+  box-shadow: 3px 5px 3px gray;
+  width: 150px;
+  margin: 10px;
+  height: 30px;
+}
+select {
+  width: 350px;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: 3px 5px 3px gray;
+}
+option {
+  background: gray;
+  color: whitesmoke;
+  width: 350px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* styles for mobile screens */
+@media all and (max-width: 600px) 
+{
+  input {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 3px gray;
+    width: 80%;
+    height: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  option {
+    background: gray;
+    color: whitesmoke;
+    width: 20%;
+  }
+  select {
+    width: 50%;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 3px gray;
+  }
+  button {
+    border-radius: 15px;
+    box-shadow: 3px 5px 3px gray;
+    width: 50%;
+    margin: 10px;
+    height: 30px;
   }
 }
+
+
+
+
+
